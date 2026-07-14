@@ -1,0 +1,64 @@
+[
+  {
+    "weight": 0.5,
+    "value": 100,
+    "destination_country": "Germany",
+    "expected_result": "Mail Department, no insurance approval"
+  },
+  {
+    "weight": 1.0,
+    "value": 999,
+    "destination_country": "France",
+    "expected_result": "Mail Department, no insurance approval"
+  },
+  {
+    "weight": 2.5,
+    "value": 1200,
+    "destination_country": "Italy",
+    "expected_result": "Regular Department, insurance approval required"
+  },
+  {
+    "weight": 10.0,
+    "value": 850,
+    "destination_country": "Spain",
+    "expected_result": "Regular Department, no insurance approval"
+  },
+  {
+    "weight": 15.5,
+    "value": 2000,
+    "destination_country": "India",
+    "expected_result": "Heavy Department, insurance approval required"
+  },
+  {
+    "weight": 1.01,
+    "value": 1001,
+    "destination_country": "Netherlands",
+    "expected_result": "Regular Department, insurance approval required"
+  },
+  {
+    "weight": 10.01,
+    "value": 1500,
+    "destination_country": "United Kingdom",
+    "expected_result": "Heavy Department, insurance approval required"
+  },
+  {
+    "weight": 0.9,
+    "value": 300,
+    "destination_country": "Belgium",
+    "fragile": true,
+    "parcel_type": "documents",
+    "expected_result": "Mail Department, no insurance approval, optional fields accepted"
+  },
+  {
+    "weight": -3,
+    "value": 500,
+    "destination_country": "France",
+    "expected_result": "Invalid parcel, weight cannot be negative"
+  },
+  {
+    "weight": 8,
+    "value": -100,
+    "destination_country": "Germany",
+    "expected_result": "Invalid parcel, value cannot be negative"
+  }
+]

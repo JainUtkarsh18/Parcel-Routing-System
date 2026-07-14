@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcel Routing System</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Parcel Routing System</h1>
+      <p>Enter parcel details or upload a JSON batch file to see routing decisions clearly.</p>
+    </section>
+
+    <section class="card">
+      <h2>Route One Parcel</h2>
+      <form id="singleForm">
+        <label>
+          Weight in kg
+          <input type="number" id="weight" step="0.01" min="0.01" required placeholder="Example: 7.5" />
+        </label>
+        <label>
+          Value in €
+          <input type="number" id="value" step="0.01" min="0" required placeholder="Example: 1200" />
+        </label>
+        <label>
+          Destination country
+          <input type="text" id="destination" required placeholder="Example: Germany" />
+        </label>
+        <button type="submit">Route Parcel</button>
+      </form>
+      <div id="singleResult" class="result hidden"></div>
+    </section>
+
+    <section class="card">
+      <h2>Batch Upload</h2>
+      <p class="help">Upload a JSON file containing an array of parcels.</p>
+      <pre class="sample">[
+  {"weight": 0.8, "value": 100, "destination_country": "Germany"},
+  {"weight": 7.5, "value": 1200, "destination_country": "France"},
+  {"weight": 15, "value": 600, "destination_country": "India"}
+]</pre>
+      <form id="batchForm">
+        <input type="file" id="batchFile" accept="application/json,.json" required />
+        <button type="submit">Upload and Route</button>
+      </form>
+      <div id="batchResult" class="result hidden"></div>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

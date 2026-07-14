@@ -1,0 +1,128 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #f4f6f9;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: min(1050px, 92vw);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 0;
+  color: #596275;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e7ef;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cfd7e3;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  justify-self: start;
+  background: #203a63;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #182b49;
+}
+
+.result {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid #d8e3f2;
+  border-radius: 10px;
+  background: #f8fbff;
+  overflow-x: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.help {
+  color: #596275;
+}
+
+.sample {
+  background: #101828;
+  color: #f8fafc;
+  padding: 16px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 12px;
+}
+
+th, td {
+  border-bottom: 1px solid #dfe5ef;
+  text-align: left;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e7efff;
+  color: #203a63;
+  font-size: 13px;
+}
+
+.error {
+  color: #9f1d1d;
+  background: #fff5f5;
+  border-color: #ffd6d6;
+}
